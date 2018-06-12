@@ -7,7 +7,8 @@
     "start": "npm-run-all --parallel security-check open:src",
     "open:src": "node buildScripts/srcServer.js",
     "security-check": "nsp check",
-    "share": "lt --port 3000 --subdomain adil"
+    "localtunnel": "lt --port 3000 --subdomain adil",
+    "share": "npm-run-all --parallel open:src localtunnel"
   },
   "author": "Adil Zeshan",
   "license": "MIT",
