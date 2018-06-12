@@ -4,7 +4,8 @@
   "description": "My JavaScript development environment",
   "scripts": {
     "prestart": "node buildScripts/startMessage.js",
-    "start": "node buildScripts/srcServer.js"
+    "start": "node buildScripts/srcServer.js",
+    "security-check": "nsp check"
   },
   "author": "Adil Zeshan",
   "license": "MIT",
