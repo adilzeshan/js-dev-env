@@ -1,5 +1,5 @@
 import './index.css';
-import { getBooks } from './api/bookAPI';
+import { getBooks, deleteBook } from './api/bookAPI';
 
 // Populate table of books via API call.
 
@@ -17,4 +17,18 @@ getBooks().then(result => {
   });
 
   global.document.getElementById('books').innerHTML = booksBody;
+
+  const deleteLinks = global.document.getElementsByClassName('deleteBook');
+
+  // Must use Array.from to create a real array from a DOM collection
+  // 'getElementsByClassName' only returns an array-like object
+  Array.from(deleteLinks, link => {
+    link.onclick = function (event) {
+      const element = event.target;
+      event.preventDefault();
+      deleteBook(element.attributes["data-id"].value);
+      const row = element.parentNode.parentNode;
+      row.parentNode.removeChild(row);
+    }
+  });
 });
