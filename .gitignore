@@ -59,3 +59,12 @@ typings/
 
 # next.js build output
 .next
+
+# VS Code workspace settings
+.vscode/settings.json
+
+# local /dist server for final build
+/dist
+
+# Mock data
+src/api/db.json
