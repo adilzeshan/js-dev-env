@@ -1,1 +1,1 @@
-### JavaScript Development Starter Kit [![Build Status](https://travis-ci.org/adilzeshan/js-dev-starter-kit.svg?branch=master)](https://travis-ci.org/adilzeshan/js-dev-starter-kit)
+### JavaScript Development Starter Kit [![Build Status](https://travis-ci.org/adilzeshan/js-dev-starter-kit.svg?branch=master)](https://travis-ci.org/adilzeshan/js-dev-starter-kit) [![Build status](https://ci.appveyor.com/api/projects/status/12sdsqrfgy7n5qfu?svg=true)](https://ci.appveyor.com/project/adilzeshan/js-dev-starter-kit)
